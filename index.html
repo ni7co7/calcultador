@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!--  <style> 
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+    </style> -->
+</head>
+<body>
+    
+
+    
+  
+   
+    <label for="ancho">Ancho</label>
+    <input  id="ancho" type="number"aria-label="ancho" >
+
+    <label for="largo">Largo</label>
+    <input  id="largo" type="number"aria-label="largo" >
+
+    <label for="desarrollo">Tipo de desarrollo</label>
+    <select name="desarrollo" id="desarrollo">
+        <option value="sketchUp">sketchUp</option>
+        <option value="autoCad">autoCad</option>
+        <option value="render3d">render3d</option>
+    </select>
+
+   <!--  <button type="button" onclick="calcularTiempoYPrecio()">Calcular</button> -->
+    <button type="button" onclick="calcularMetrosCuadrados()">Calcular</button>
+ <!--    <input type="text"  placeholder="nombre" size="100"  > -->
+   
+    
+  
+    <p id="resultado"></p>
+    <p id="resultado2"></p>
+    <p id="resultado3"></p>
+   
+
+
+    <script src="main.js" ></script>
+    
+
+</body>
+</html>
