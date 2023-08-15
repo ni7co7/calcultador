@@ -1,4 +1,5 @@
 function calcularMetrosCuadrados(){
+  
     const ancho = parseInt(document.getElementById("ancho").value);
     const largo = parseInt(document.getElementById("largo").value);
 
@@ -8,8 +9,14 @@ function calcularMetrosCuadrados(){
     const resultado = document.getElementById("resultado").innerHTML = metrosCuadrados + " metros cuadrados"
 
 
-    
+    const usuarios = [];
     const desarrollo = (document.getElementById("desarrollo").value);
+
+    const input = document.querySelector("nombre");
+
+    z
+   
+    
    
 
     switch (desarrollo){
@@ -31,12 +38,16 @@ function calcularMetrosCuadrados(){
     
         break;
 
-        default:(document.getElementById("resultado")).innerHTML="ingrese un programa de las 3 opciones"    
+
+        
+
+        default:
+          document.getElementById("resultado").innerHTML="ingrese un programa de las 3 opciones"    
         return;
 
     }
-
     
+
     const tiempoTotal = tiempo * metrosCuadrados;
     const precioTotal = precio * metrosCuadrados;
 
@@ -45,27 +56,27 @@ function calcularMetrosCuadrados(){
     
     console.log(precioTotal)
     console.log(tiempoTotal)
+    
     const resultado2 = document.getElementById("resultado2").innerHTML = "$ " + precioTotal
     const resultado3 = document.getElementById("resultado3").innerHTML =  tiempoTotal + " hora/s " 
 
-
     
 }
-const nombre = prompt("nombre", "");
+
+
+
+
+// // Mostrar la lista de nombres al cargar la página
 
 
 
 
 
-alert("Hola " + nombre + " bienvenido");
 
-localStorage.setItem(nombre, "")
-console.log(nombre)
  
 
 
 
-const input = document.querySelector("nombre");
 
 
 
@@ -75,21 +86,66 @@ const input = document.querySelector("nombre");
 
 
 
-const fragment = document.createDocumentFragment();
+
+
+/* 
+
+ const usuario = {
+  nombre:"nombre: "+ nombre,
+  m2: metrosCuadrados + "m²",
+  tipoDesarrollo: desarrollo,
+  precio: "$ " + precioTotal
+};
+
+usuarios.push(usuario);
+
+document.getElementById("resultado").innerHTML = metrosCuadrados + " metros cuadrados";
+document.getElementById("resultado2").innerHTML = "$ " + precioTotal + nombre;
+document.getElementById("resultado3").innerHTML = tiempoTotal + " hora/s";
+
+
+function mostrarUsuarios() {
+const usuariosContainer = document.getElementById("usuariosContainer");
+usuariosContainer.innerHTML = "";
+
+usuarios.forEach(usuario => {
+  const usuarioElement = document.createElement("div");
+  usuarioElement.innerHTML = `
+      <p>Nombre: ${usuario.nombre}</p>
+      <p>Área: ${usuario.m2}</p>
+      <p>Tipo de desarrollo: ${usuario.tipoDesarrollo}</p>
+      <p>Precio: ${usuario.precio}</p>
+      <hr>
+  `;
+  usuariosContainer.appendChild(usuarioElement);
+});
+}
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+/* 
+{const fragment = document.createDocumentFragment();
 const li = fragment
   .appendChild(document.createElement("section"))
   .appendChild(document.createElement("ul"))
   .appendChild(document.createElement("li"));
 li.outerHTML = "hola " +nombre ;
+}
 
 document.body.appendChild(fragment);
 
 
-
-
-
-
-
+*/
 
 
 
@@ -100,43 +156,11 @@ document.body.appendChild(fragment);
   
   localStorage.getElementById('myInput', prompt('your name'));
   
-
 }
 
-   */
-
-
-
-
-
-
-/* 
-const siteId = 'MLA';
-const categoryId = 'MLA168840';
-const apiUrl = `https://api.mercadolibre.com/sites/${siteId}/search?category=${categoryId}`;
-
-async function obtenerPreciosConstruccion() {
-  try {
-    const response = await fetch(apiUrl);
-    const data = await response.json();
-
-    const preciosMateriales = data.results.map(item => {
-      return {
-        titulo: item.title,
-        precio: item.price,
-        moneda: item.currency_id,
-      };
-    });
-
-    return preciosMateriales;
-  } catch (error) {
-    console.error('Error al obtener los precios:', error);
-    return [];
-  }
-}
-
-obtenerPreciosConstruccion()
-  .then(precios => {
-    console.log('Precios de materiales de construcción en MercadoLibre:', precios);
-  });
  */
+
+
+
+
+
